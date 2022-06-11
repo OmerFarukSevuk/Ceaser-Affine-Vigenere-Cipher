@@ -16,4 +16,3 @@ def Ceaser():
             elif char.lower()==char2.lower():
                 cipher+=newdownalph[a]
     print(f"Encrypted: {cipher}")
-

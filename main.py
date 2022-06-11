@@ -11,7 +11,6 @@ while True:
 6-Vigenère Cipher Decoder    
 """)
     event = int(input("Select Event: "))
-
     if event==1:
         encoder.Affine()
     elif event==2:
