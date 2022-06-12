@@ -1,2 +1,2 @@
 # Ceaser-Affine-Vigenere-Cipher
-Now Just Ceaser Cipher but I will add the other ones. : )
+I add all of them. But You can be sure ı will add other cipher methods. : )
