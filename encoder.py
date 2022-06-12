@@ -32,7 +32,6 @@ def Affine():
             elif char.lower()==char2.lower():
                 cipher+=lowalph[((a*key_a)+key_b)%len(alph)]
     print(f"Encrypted: {cipher}")
-
 def Vigenere():
     cipher=""
     alph=input("Alphabet: ").upper()
@@ -44,4 +43,19 @@ def Vigenere():
         if len(key)>len(text):
             z=len(key)-len(text)
             key=key[:(len(key)-z)]
-Vigenere()
+    for i in range(len(text)):
+        char=text[i]
+        char2=key[i]
+        for a in range(len(alph)):
+            char3=alph[a]
+            if char==char3:
+                for b in range(len(alph)):
+                    char4=alph[b]
+                    if char4==char2:
+                        cipher+=alph[(a+b)%len(alph)]
+            elif char.lower()==char3.lower():
+                for b in range(len(alph)):
+                    char4=alph[b]
+                    if char4.lower()==char2.lower():
+                        cipher+=lowalph[(a+b)%len(alph)]
+    print(f"Encrypted: {cipher}")
