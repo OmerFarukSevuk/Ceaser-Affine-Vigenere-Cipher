@@ -48,4 +48,3 @@ def Affine():
             elif char.lower()==char2.lower():
                 cipher+=lowalph[(z*(a-key_b))%len(alph)]
     print(f"Decrypted: {cipher}")
-Affine()
