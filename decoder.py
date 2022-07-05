@@ -75,4 +75,3 @@ def Vigenere():
                     if char4.lower()==char2.lower():
                         cipher+=lowalph[((a-b)+26)%len(alph)]
     print(f"Encrypted: {cipher}")
-Vigenere()
